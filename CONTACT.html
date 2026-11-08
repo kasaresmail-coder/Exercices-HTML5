@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maison Mina</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Accueil</a></li>
+                <li><a href="PRODUITS.html">Produits</a></li>
+                <li><a href="CONTACT.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <H2>Contactez-nous</H2>
+    <form action="#" method="get">
+<label for="nom">Nom complet :</label><br>
+<input type="text" id="nom" name="nom" required>
+<br><br>
+
+<label for="email">Adresse e-mail :</label><br>
+<input type="email" id="email" name="email" required>
+<br><br>
+
+<label for="telephone">Téléphone :</label><br>
+<input type="tel" id="telephone" name="telephone" required>
+<br><br>
+
+<label for="objet">Objet de la demonde :</label><br>
+
+<select id="objet" name="objet">
+    <option value="information">Information</option>
+    <option value="commande">Commande</option>
+    <option value="conseil">Conseil</option>
+    <option value="autre">Autre</option>
+</select>
+<br><br>
+<fieldset>
+<legend>Vous êtes :</legend>
+
+<inbut type="radio" id="client" name="statut" value="client">
+    <label for="client">Client</label>
+
+<input type="radio" id="visiteur" name="statut" value="visiteur">
+    <label for="visiteur">Visiteur</label>
+</fieldset>
+
+<br>
+
+<label for="message">Message :</label><br>
+<textarea id="message" name="message" rows="6" cols="40" required></textarea>
+<br><br>
+<input type="checkbox" id="accord" name="accord">
+<label for="accord">J'accepte d'être recontacté.></label>
+<br><br>
+
+<button type="submit">Envoyer</button>
+<button type="reset">Réinitialiser</button>
+    </form>
+
+    <h2>Nos coordonnées</h2>
+    <p>
+        E-mail :
+        <a href="mailto:contact@maisonmina.example">contact@maisonmina.example</a>
+    </p>
+    <br><br>
+    <p>
+        Téléphone :
+        <a href="tel: +212600000000">+212 6 00 00 00 00</a>
+    </p>
+    <br>
+    <footer>
+        <hr>
+        <p>Maison Mina - boutique - Groupe : A - 2026</p>
+    </footer>
+</body>
+</html>

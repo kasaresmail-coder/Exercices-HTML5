@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC_EXE_HTML</title>
+</head>
+<body>
+    <!-- Exercice 1 -->
+     <!-- Transforme les paragraphe en une liste -->
+      <h1>Mes cocktails preferes</h1>
+      <ul>
+        <li>Mojito</li>
+        <li>Gin Fizz</li>
+        <li>Bloody mary</li>
+        <li>Long Island Iced Tea</li>
+      </ul>
+    <!-- Exercice 2 -->     
+    <!-- corriger les problemes -->    
+    <!-- le probleme est change des balise est ne sont pas dans le bon place -->       
+        <h1>Mes <span>cocktails</span> preferes</h1>
+        <p>Mojito</p>
+        <p>Gin Fizz</p>
+        <p>Bloody mary</p>
+        <p>Long Island Iced Tea</p>
+    <!-- Exercice 3 -->
+    <!-- Ajouter un lien vers les paragraphes pour les different cocktails -->    
+        <p><a href="https://fr.wikipedia.org/wiki/Mojito">Mojito</a></p>
+        <p><a href="https://fr.wikipedia.org/wiki/Moscow_mule">Moscow_mule</a>est un cocktail à base de vodka, de bière de gingembre épicée et de jus de citron vert, accompagné d'une rondelle de citron.</p>
+        <p>Le <a href="https://fr.wikipedia.org/wiki/Long_Island_Iced_Tea">Long Island Iced Tea</a> est un cocktail à base de tequila</p>  
+    <!-- Exercice 4 -->  
+    <!-- Ajouter un text alternatif a l'image -->
+        <p><img src="cocktail.jpg" alt="Un délicieux cocktail"></p> 
+    <!-- Exercice 5 -->
+    <!-- Ajouter une barre horizontale entre le titre et le contenu --> 
+      <h1>Mon super titre</h1>
+    <hr>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit illo tempore porro repellendus? Consequuntur vel ducimus, illo voluptatem veritatis enim nihil, accusantium unde at voluptatum harum soluta modi aliquid reiciendis dolor tenetur, ea delectus. Officiis, eligendi. Maxime praesentium odit, obcaecati dolores optio adipisci alias culpa est velit magnam deleniti!
+      </p>
+
+    <!-- Exercice 6 -->
+    <!-- faire en sorte qu'a l'interieur des paragraphes,chaque vers du poème soit sur une ligne --> 
+    <p>
+        Roses are red,<br>
+        Violets are blue,<br>
+        Sugar is sweet,<br>
+        And so are you.
+    </p>
+    <p>
+        Roses are red,<br>
+        Violets are blue,<br>
+        Sugar is sweet,<br>
+        And so are you.
+    </p>
+    <!-- Exercice 7 -->
+     <!-- Construire une tableau avec la liste des pays et des capitales du Benelux  -->
+    <table border="1">
+        <tr>
+            <th>Pays</th>
+            <th>Capitale</th>
+        </tr>
+        <tr>
+            <td>Belgique</td>
+            <td>Bruxelles</td>
+        </tr>
+        <tr>
+            <td>Pays-Bas</td>
+            <td>Amsterdam</td>
+        </tr>
+        <tr>
+            <td>Luxembourg</td>
+            <td>Luxembourg</td>
+        </tr>
+    </table>
+    <!-- Exercice 8 -->
+    <!-- Ajouter des liens sur le numero de telephone et l'adresse email -->
+    <h1>Contact Marie de Melun</h1>
+    <p>
+      <a href="tel:+32123456789">+32 12 34 56 78</a>
+    </p>
+    <p>
+      <a href="mailto:info@benelux.com">info@benelux.com</a>
+    </p>
+    <!-- Exercice 9 -->
+    <!-- Ajouter au formulaire une liste déroulante avec 3 cocktails de votre choix -->
+    <h1>Formulaire de commande</h1>
+    <form action="/submit" method="post">
+        <label for="cocktail">Choisissez un cocktail :</label>
+        <select id="cocktail" name="cocktail">
+            <option value="mojito">Mojito</option>
+            <option value="gin_fizz">Gin Fizz</option>
+            <option value="bloody_mary">Bloody Mary</option>
+        </select>
+        <input type="submit" value="Envoyer">
+    </form>
+    <!-- Exercice 10 -->
+    <!-- Modifier le formulaire pour que tous les champs soient obligatoires et que la valeur du premier champ ne dépasse pas 32 caractères -->
+    <h1>Formulaire de contact</h1>
+    <form action="/submit" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" maxlength="32" required>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
